@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTubeWibe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="search-page">
+        <h1>YouTubeWibe</h1>
+        <input type="text" id="search-bar" placeholder="Search for videos...">
+        <button onclick="searchVideos()">Search</button>
+        <div id="video-results"></div>
+    </div>
+
+
+    <div id="video-page" style="display: none;">
+        <h1 id="video-title"></h1>
+        <div id="video-player"></div>
+        <div id="video-description"></div>
+        <div id="related-videos"></div>
+        <button onclick="goBack()">Back to Search</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

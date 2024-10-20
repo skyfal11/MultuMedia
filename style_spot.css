@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #8A2BE2, #00FF00); /* Фиолетовый к зеленому */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #FF0000;
+}
+
+button {
+    background: #0f7d99;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#track-results {
+    margin-top: 20px;
+}
+
+.track-item {
+    background-color: #0f7d99;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.track-item:hover {
+    transform: scale(1.05);
+}
+
+#player-page {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#album-artwork img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+#track-timeline {
+    width: 300px;
+}
+
+#time-display {
+    margin-top: 10px;
+}
+
+#controls {
+    margin-top: 10px;
+}

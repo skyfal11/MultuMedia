@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotifyWibe</title>
+    <link rel="stylesheet" href="style_spot.css">
+</head>
+<body>
+    <!-- Главная страница поиска -->
+    <div id="search-page">
+        <h1>SpotifyWibe</h1>
+        <input type="text" id="search-bar" placeholder="Search for tracks..." />
+        <button onclick="searchTracks()">Search</button>
+        <div id="track-results"></div>
+    </div>
+
+    <!-- Страница проигрывателя -->
+    <div id="player-page" class="hidden">
+        <h1>SpotifyWibe</h1>
+        <h2 id="track-title"></h2>
+        <div id="album-artwork"></div>
+        <input type="range" id="track-timeline" min="0" max="100" value="0" />
+        <div id="time-display">
+            <span id="current-time">0:00</span> / <span id="total-time">0:00</span>
+        </div>
+        <div id="controls">
+            <button id="play-button" onclick="togglePlay()">Play</button>
+        </div>
+        <button onclick="showSearchPage()">Back to search</button>
+    </div>
+
+    <script src="script_spot.js"></script>
+</body>
+</html>
